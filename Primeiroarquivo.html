@@ -7,19 +7,24 @@
 </head>
 <body>
     <script>
-        /* Considerando que cada mês possui 30 dias, faça um algoritmo que: 
-    * Receba uma quantidade n de meses do usuário. 
-    * Calcule o total de dias com base nessa quantidade n de meses. 
-    * Mostre o resultado na tela.  */
+        /* Escreva um script que receba uma valor A, verifique se o valor A é maior que 10 e
+mostre na tela "O valor A é maior que 10"  */
 
 
 
-let contaDeluz = Number (prompt("digite o valor conta de luz"))
-let contaÁgua = Number(prompt("digite o valor da conta de água"))
-let contaInternet = Number (prompt("digite o valor da conta de internet"))
+    let quantidadeNegativos = 0
+for (let i = 0; i < 5; i++) {
+    let valor = +prompt("digite um valor")
+    
+    if (valor < 0) {
+        quantidadeNegativos++
+    }
+}
+console.log (quantidadeNegativos)
 
-let resultado = contaDeluz + contaÁgua + contaInternet 
-console.log (`Seu valor total é de ${resultado}`)
+
+
+
 
 
 
