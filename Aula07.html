@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+1)
+console.log(!10) // false
+console.log(!!"String") // true
+console.log(!!2.3) // true
+console.log(Boolean(null)) // false
+
+2)
+console.log(10 > 2) // true
+console.log(5 >= "5") // true
+console.log("apple" > "pineapple") // false
+console.log("2" > "12") // true
+console.log(undefined == null) // true
+console.log(undefined === null) // false
+console.log(null == "\n0\n") // false
+console.log(null === +"\n0\n") // false
+
+3)
+   let valorA = +(prompt("Digite um valor"))
+   if (valorA > 10) {
+       console.log("o valor A é maior que 10")
+   }
+   console.log("programa finalizado...")
+
+4)
+   let número = +(prompt("Digite um valor"))
+   if (número % 2 ===0) {
+    console.log(número/2)
+   }
+    console.log("Programa finalizado...")
+
+
+
+
+5)
+   let numb1 = +(prompt("digite um valor"))
+   if (numb1 % 2 ==0){
+   console.log("O número é par")  
+   }
+   else{
+      console.log("O número é impar") 
+   }
+
+6) 
+   let digi = +(prompt("Digite um valor"))
+   if (digi > 20 && digi < 90) {
+       console.log("O número está na faixa entre 20 e 90")
+   }
+   else{
+       console.log("O número está fora da faixa")
+   }
+
+7) 
+Boolean(A > 10 && B <= 20) // false
+Boolean(A > 10 || B <= 20) // true
+Boolean((A === 10 || B > 20) && B === 20) // true
+console.log(null || 2 || undefined) // 2
+Boolean(0 && 1) // false
+
+8)
+   let valorA = +(prompt("Imforme um valor"))
+   let valorB = +(prompt("Imforme um valor"))
+   let valorC = +(prompt("Imforme um valor"))
+    if (valorA > valorB && valorA > valorC){
+    console.log(`O maior número é ${valorA}`)
+    }
+    if (valorB > valorA && valorB > valorC){
+        console.log(`O maior número é ${valorB}`)
+    }
+    if (valorC > valorA && valorC > valorB){
+        console.log(`O número maior é ${valorC}`)
+    }
+
+9)
+    let a = 2
+    let b = 4
+    let soma = (a+b)
+    if (soma < 4){
+        console.log("abaixo")
+    } 
+    else{
+        console.log("acima")
+    }
+     
+10) 
+     /* Triângulo	Equilátero:	possui os 3 lados iguais.
+     Triângulo	Equilátero:	possui os 3 lados iguais.	
+− Triângulo	Isósceles: possui 2	lados iguais.	
+− Triângulo	Escaleno: possui 3 lados diferentes.*/
+                    
+
+    let ladoA = +(prompt("Imforme um valor"))
+    let ladoB = +(prompt("Imforme um valor"))
+    let ladoC = +(prompt("Imforme um valor"))
+     if (ladoA == ladoB && ladoA == ladoC){
+         console.log("Esse triângulo é Equilátero")
+     }
+    else if (ladoA != ladoB && ladoA != ladoC && ladoB != ladoC){
+     console.log("Esse triângulo é Escaleno")   
+    }
+    else{
+        console.log("Esse triângulo é Isósceles")
+    }
+
+11)
+    let valorUsuário = +(prompt("Imforme um valor"))
+    if (valorUsuário > 0){
+        let raiz = Math.sqrt(valorUsuário)
+        console.log(`${raiz}`)
+    }
+    else{
+        console.log("Número invalido")
+    }
+
+12) 
+    let usuário = +(prompt("digite um número"))
+    if (usuário % 5 == 0){
+        console.log("Esse número é divisível por 5")
+    }
+    else{
+        console.log("Não é divisível por 5")
+    }
+
+13)
+   let nume = 10
+   if (nume > 0){
+       console.log (Math.sqrt(nume))
+   }
+   else{
+       console.log(nume**2)
+   }
+
+
+14)
+    let trabalhador = prompt("Imforme seu salário")
+    let prestação = prompt("Imforme o valor da prestação")
+    if(prestação > trabalhador * 0.2) {
+       console.log("Emprestimo não concedido")
+    }      
+    else{
+    console.log("Empréstimo concedido")
+    }
+
+15) 
+    let golTime1 = +(prompt("Imforme a quantidade de gols do primeiro time"))
+    let golTime2 = +(prompt("Imforme a quantidade de gols do segundo time"))
+
+16)
+    let idade = prompt("Imforme sua idade")
+    if (idade > 18 && idade < 70){
+        console.log("Voto obrigtório")
+    }
+    else if (idade > 15 && idade < 17){
+        console.log("Voto opcional")
+    }
+    else{
+        console.log("Não precisa votar")
+    }
+
+17)
+    let numero1 = 10
+    let numero2 = 20
+    let numero3 = 30
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
