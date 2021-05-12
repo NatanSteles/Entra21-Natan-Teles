@@ -168,13 +168,122 @@ Boolean(0 && 1) // false
     }
 
 17)
-    let numero1 = 10
-    let numero2 = 20
-    let numero3 = 30
-    if (numero1 > numero2 && numero2 > numero3 ){
-        console.log(`${numero1} ${numero2} ${numero3}`)
-    }
+    let numero1 = +(prompt("Imforme um valor"))
+    let numero2 = +(prompt("Imforme um valor"))
+    let numero3 = +(prompt("Imforme um valor"))
+    if (numero1 > numero2 && numero2 > numero3) {
+    console.log(numero1, numero2, numero3)
+} else if (numero1 > numero3 && numero3 > numero2) {
+    console.log(numero1, numero3, numero2)
+} else if (numero2 > numero1 && numero1 > numero3) {
+    console.log(numero2, numero1, numero3)
+} else if (numero2 > numero3 && numero3 > numero1) {
+    console.log(numero2, numero3, numero1)
+} else if (numero3 > numero1 && numero1 > numero2) {
+    console.log(numero3, numero1, numero2)
+} else {
+    console.log(numero3, numero2, numero1)
+}
 
+18)
+   let semana = +(prompt("Digite um número de 1 á 7"))
+   switch (semana) {
+       case 1:
+       console.log("Domingo")
+           break;
+       case 2:
+       console.log("Segunda-feira")
+           break
+        case 3 :
+        console.log("Terça-feira")
+           break
+        case 4:
+        console.log("Quarta-feira")
+           break
+        case 5:
+        console.log("Quinta-feira")
+           break
+        case 6:
+        console.log("Sexta-feira")
+           break
+        case 7:
+        console.log("Sábado")
+           break            
+       default:
+        console.log("Valor não encontrado")
+           break;
+   }
+
+19)
+   let idadeA = +(prompt("Qual a sua idade ?"))
+   if (idadeA > 17 && idadeA < 68){
+       console.log("Pode doar sangue")
+   }
+   else {
+       console.log("Não pode doar sangue")
+   }
+
+20)
+   let mês = +(prompt("Digite um número de 1 á 12"))
+   switch (mês) {
+       case 1:
+       console.log("Janeiro")    
+           break;
+       case 2:
+       console.log("Fevereiro")
+           break
+       case 3:
+       console.log("Março")
+           break
+       case 4:
+       console.log("Abril")
+           break
+       case 5:
+       console.log("Maio")
+           break
+       case 6: 
+       console.log("Junho")  
+           break
+       case 7: 
+       console.log("Julho")
+           break
+       case 8:
+       console.log("Agosto") 
+           break
+       case 9:
+       console.log("Setembro")
+           break
+       case 10:
+       console.log("Outubro")
+           break
+       case 11: 
+       console.log("Novembro")
+           break
+       case 12: 
+       console.log("Dezembro")
+           break                          
+       default:
+       console.log("Valor não encontrado")
+           break;
+   }
+
+21)
+   let turno = prompt("Digite o turno em que você está M-matutino ou V-Vespertino ou N- Noturno !")
+   switch (turno) {
+       case "M":
+       console.log("Bom dia")    
+           break;
+       case "V": 
+       console.log("Boa tarde")
+           break
+       case "N": 
+       console.log("Noturno")
+           break    
+       default:
+       console.log("Valor não encontrado")
+           break;
+   }
+    
 
 
 
