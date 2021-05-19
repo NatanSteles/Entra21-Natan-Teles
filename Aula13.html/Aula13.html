@@ -12,7 +12,7 @@
 let vetor =[]
 let pares = 0
   for (let i = 0; i < 10; i++){
-      vetor[i] = prompt(`Digite o ${i + i} valor`)
+      vetor[i] = prompt(`Digite o ${i + 1} valor`)
  }
     for (let i = 0, tamanhoVetor = vetor,length; i < tamanhoVetor; i++) {
         if (vetor[i] % 2 === 0){
@@ -24,12 +24,24 @@ let pares = 0
     console.log(`O vetor posssi ${pares} valores(s) pares`)
 
 2)
-  let vetor = [1,2,3,4,5]
-    let maior = []
-     let posição = []
-    console.log(vetor)
-    console.log(vetor[4][4])
-
+  let vetor = []
+    let maior = 0
+     let posição = 0
+     for (let i =0; i < 5; i++){
+        vetor[i] = +(prompt(`Imforme o ${i + 1} valor`))
+        for (let i = 0, tamanhoVetor = vetor.length; i < tamanhoVetor; i++) {
+            console.log(vetor[i])
+     if (i === 0){
+        maior = vetor[i]}
+     else if ( vetor[i] > maior ) {
+       maior = vetor[i]
+       posição = i
+     }   
+            
+        }
+          
+     }
+   console.log(`Vetor: ${vetor}\nMaior: ${maior}\nPosição: ${posição}`)
 
 4)    
     
