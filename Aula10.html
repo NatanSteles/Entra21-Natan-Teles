@@ -91,9 +91,137 @@ C)
         console.log(`O calculo de ${fatorial} é:  ${calculo} `)
         
 15)
-            
-          
- 
+    let salarioMedia = 0
+    let mediaFilhos = 0
+    let maiorSalario = 0
+    let soma = 0
+      
+      while (true) {
+        let salario = +(prompt("Imfore o seu salário: "))
+          if ( salario < 0)
+             break
+      }
+          if (salario > maiorSalario){
+               maiorSalario = salario
+            soma++ 
+                
+          }
+          console.log(`media do salário: ${salarioMedia / soma}  `)
+
+
+16)
+   let maior = 0
+   let menor = 0
+
+        for(let i = 0; i < 5; i++){
+            let numero = +(prompt("Imforme um número"))
+
+      if (i === numero){
+           maior = numero
+           menor = numero
+      } 
+        if (numero > maior){
+           maior = numero
+      } else if (numero < menor){
+           menor = numero
+      }
+        }
+     console.log(`Menor número: ${menor}\nMaior número: ${maior}`)
+
+
+
+17)
+
+    let votos = 0
+    let votoJose = 0
+    let votoMaria = 0
+    let votoJoao = 0
+    let votoNulo = 0
+    let votoBranco = 0
+
+        while (true) {
+           votos = +prompt("1 José:\n2 Maria:\n3 joão:\n4 Votos nulo:\n5 Votos em branco:")
+        if(votos < 1) break    
+     
+    switch (votos) {
+
+        case 1:
+            votoJose++
+            break;
+        case 2:
+            votoMaria++        
+            break
+        case 3:  
+            votoJoao++
+            break
+        case 4: 
+            votoNulo++
+            break
+        case 5: 
+            votoBranco++ 
+            break  
+        default:
+        console.log("Valor invalido")
+            break;     
+    }       
+       }
+       console.log(`Voto(s) José: ${votoJose}\nVoto(s) Maria: ${votoMaria}\nVoto(s) João: ${votoJoao}\nVoto(s) Nulo: ${votoNulo}\nVoto(s) em branco: ${votoBranco}`)
+
+
+18) /*  Faça um algoritmo que mostre os conceitos finais dos alunos de uma classe de 4 alunos.
+a) a média de cada aluno será fornecida pelo usuário.
+b) a tabela de conceitos se encontra abaixo:
++----------------+-----------+
+|       Nota     |  Conceito |
++----------------+-----------+
+| de 0.0 à 4.9   |     D     |
+| de 5.0 à 6.9   |     C     |
+| de 7.0 à 8.9   |     B     |
+| de 9.0 à 10.0  |     A     |
++----------------+-----------+ */
+   
+    let i = 0
+      while (i < 4) {
+        i++
+    let nome = prompt("Imforme seu nome:")
+    let media = +(prompt("Digite sua media:"))
+    if (media >= 0 && media <= 4.9)
+        console.log(`Media do(a) aluno(a) ${nome}:D`)
+    else if (media >= 5.0 && media <= 6.9)
+        console.log(`Media do(a) aluno(a) ${nome}:C`)
+    else if (media >= 7.0 && media <= 8.9)
+        console.log(`Media do(a) aluno(a) ${nome}:B`)
+    else if (media >= 9.0 && media <= 10.0)
+        console.log(`Media do(a) aluno(a) ${nome}:A`)               
+     }
+
+      
+/* 19) Escreva um algoritmo que calcule a média aritmética das 3 notas dos alunos de uma classe. 
+O algoritmo deverá ler, além das notas, o código do aluno e deverá ser encerrado quando o código for igual a zero.
+Entrada:               Saída:
+0012021                A média do aluno com a matrícula 0012021 é 9.00
+10                     A média do aluno com a matrícula 0022021 é 10.00
+8
+9
+0022021
+10
+10
+10
+0 */
+      
+      while (true){
+         let cadastro = +prompt("Insira seu cadastro")
+           if (cadastro <= 0){
+              break
+           }      
+    let a = +(prompt("Insira sua nota"))
+    let b = +(prompt("Insira sua nota"))
+    let c = +(prompt("Insira sua nota"))
+      
+      let media = (a + b + c) /3
+        
+    console.log(`A média do aluno com a matrícula ${cadastro} é: ${media.toFixed(2)}`)
+   }
 
 
  
