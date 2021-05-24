@@ -1,0 +1,93 @@
+1-
+ let numero = +prompt("Digite o numero")
+if (numero % 2 == 0) {
+    alert("O numero é par")    
+} else if (numero < 0 ) {
+    alert("O número é negativo")
+} else if (numero = 0 )
+    alert("O número é neutro")
+
+2- 
+   
+    let idadeA = +(prompt("Qual a sua idade ?"))
+   if (idadeA > 17 && idadeA < 68){
+       console.log("Pode doar sangue")
+   }
+   else {
+       console.log("Não pode doar sangue")
+   }
+
+3- 
+
+   let mês = +(prompt("Digite um número de 1 á 12"))
+   switch (mês) {
+       case 1:
+       console.log("Janeiro")    
+           break;
+       case 2:
+       console.log("Fevereiro")
+           break
+       case 3:
+       console.log("Março")
+           break
+       case 4:
+       console.log("Abril")
+           break
+       case 5:
+       console.log("Maio")
+           break
+       case 6: 
+       console.log("Junho")  
+           break
+       case 7: 
+       console.log("Julho")
+           break
+       case 8:
+       console.log("Agosto") 
+           break
+       case 9:
+       console.log("Setembro")
+           break
+       case 10:
+       console.log("Outubro")
+           break
+       case 11: 
+       console.log("Novembro")
+           break
+       case 12: 
+       console.log("Dezembro")
+           break                          
+       default:
+       console.log("Valor não encontrado")
+           break;
+   }   
+
+
+4-
+
+   let i = 200000
+   let salario = prompt("Imforme seu salário")
+    let totalVendas = prompt("Imforme o valor total de vendas")
+    
+    if (totalVendas > i ( salario + (10/100) ) ) {
+       console.log(`Seu sálario é: ${salario.toFixed(2)}`)
+    }      
+    else if (totalVendas < i (salario + (7/100))) {
+        console.log(`Seu sálario é: ${salario.toFixed(2)}`)
+    }
+
+5-
+
+   let nota1 = +(prompt("Imforme a primeira nota"))
+   let nota2 = +(prompt("Imforme a segunda nota"))
+   let nota3 = +(prompt("Imforme a terceira nota"))
+   let frequencia = +(prompt("Imforme sua frequência")) 
+     
+      let media = (nota1 + nota2 + nota3) / 2
+
+   if (media >= 7 && frequencia > (75/100)) {
+       alert("Parabé Aprovado")
+   } else {
+      alert("Reprovado")
+   } 
+
