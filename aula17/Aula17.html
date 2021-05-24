@@ -91,13 +91,42 @@ a média por parâmetro retorne o conceito da média conforme a tabela abaixo:
        if (media >= 5 && media <= 6.9)return "C" 
        if (media >= 7 && media <= 8.9)return "B" 
        if (media >= 9 && media <= 10)return "A"
-       
        }   
-           
-           
-           
+         let nota = +(prompt("Imfora sua nota"))
+       console.log (mediaAluno(nota))    
+
+
+
+
+
+
+
+6) /* Faça uma função que recebe, por parâmetro, a altura e o sexo de uma pessoa e 
+retorna o seu peso ideal. Receba a altura e o sexo do usuário e mostre o resultado da função.
+Utilize as fórmulas:
+Mulher: 62.1 x altura - 44.7
+Homem: 72.7 x altura - 58 */
+
+
+    let altura = +prompt("Digite sua altura"),
+    let sexo = prompt("Digite seu sexo F - meninino e M - masculino").toUpperCase()
+        function pesoIdeal(altura,sexo) {
+            
+        }
+switch (sexo) {
+    case "F":
+        pesoIdeal = (62.1 * altura) - 44.7
+        console.log(pesoIdeal.toFixed(2))
+        break
+    case "M":
+        pesoIdeal = (72.7 * altura) - 58
+        console.log(pesoIdeal.toFixed(2))
+        break
+    default:
+        console.log("Você digitou um sexo inválido")
+} 
     
-        
+     console.log   
     
   
     
