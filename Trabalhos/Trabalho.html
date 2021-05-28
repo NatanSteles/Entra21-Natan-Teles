@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function calculaMedia(notas) {
+            let soma = 0
+            for(let i = 0; i < 3; i++){
+                soma = soma + notas[i]
+            }
+            return soma / 3
+        } 
+        
+        function cadastraNotas() {
+            let notas = []
+
+            for (let i = 0; i < 3; i++) {
+                notas[i] = +prompt(`Digite a ${i + 1} nota`)
+            }
+            
+            return notas
+        }
+
+        function mostraMedia(media){
+            alert(`A média é ${media.toFixed(2)}`)
+        }
+
+        let notas = cadastraNotas()
+        let media = calculaMedia(notas)
+        mostraMedia(media)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
