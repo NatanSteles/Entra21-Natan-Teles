@@ -7,56 +7,30 @@
 </head>
 <body>
     <script>
+        let matriz = [
+            [112, "JOAO", 10, 10, 10, 10],
+            [113, "JOSE", 10, 10, 10, 9],
+            [113, "JOSE", 10, 10, 10, 9]
+        ]
 
-function calculaMedia(notas) {
-            let soma = 0
-            for(let i = 0; i < 3; i++){
-                soma = soma + notas[i]
-            }
-            return soma / 3
-        } 
         
-        function cadastraNotas() {
-            let notas = []
 
-            for (let i = 0; i < 3; i++) {
-                notas[i] = +prompt(`Digite a ${i + 1} nota`)
-            }
-            
-            return notas
+        function mostraTela() {
+            let alunos = []
+            for (let linha = 0; linha < matriz.length; linha++) {
+                let aluno = {
+                    matricula: matriz[linha][0],
+                    nome: matriz[linha][1],
+                    notal: matriz[linha][2],
+                    nota2: matriz[linha][3],
+                    nota3: matriz[linha][4],
+                    media: matriz[linha][5],
+                }
+            alunos.push(aluno)
         }
-
-        function mostraMedia(media){
-            alert(`A média é ${media.toFixed(2)}`)
+        console.table(alunos)
         }
-
-        let notas = cadastraNotas()
-        let media = calculaMedia(notas)
-        mostraMedia(media)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        console.log(mostraTela())
     </script>
 </body>
 </html>

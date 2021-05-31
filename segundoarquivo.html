@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+let todosAlunos = []
+              
+              function mostraTela() {
+                  let alunos = []
+                  for (let linha = 0; linha < todosAlunos.length; linha++) {
+                      let aluno = {
+                          matricula: todosAlunos[linha][0],
+                          nome: todosAlunos[linha][1],
+                          notal: todosAlunos[linha][2],
+                          nota2: todosAlunos[linha][3],
+                          nota3: todosAlunos[linha][4],
+                          media: todosAlunos[linha][5],
+                      }
+                  alunos.push(aluno)
+              }
+              console.table(alunos)
+      
+              function cadastraAlunos(){    
+                  let matricula = +prompt("Insira a matrícula do aluno")
+                  let alunos = []
+                  if (verificaMatricula(matricula) == true) return alert("matricula já existe")
+                  alunos.push(matricula)
+                  alunos.push(prompt("Digite o nome do aluno"))
+                  todosAlunos.push(alunos)
+              }
+      
+      
+              function verificaMatricula(matricula) {
+                  for(let i = 0; i < todosAlunos.length; i++) {            
+                      if (matricula == todosAlunos[i][0]) return true
+                      }
+                      return false
+                  }
+              
+      
+              function menu() {
+                  let opção
+                  
+                  menu:
+                  while(true){
+                      opção = +prompt("1) Cadastrar aluno \n2) Editar informações do aluno \n3) Cadastrar notas de um aluno \n4) Listar alunos \n0) Sair")
+                      switch(opção){
+                          case 1:
+                              cadastraAlunos()
+                              break;
+                          case 2:
+                              let matricula = +prompt("Insira a matrícula do aluno")
+                              editarAlunos(matricula)
+                              break;
+                          case 3:
+                              cadastraNotas()
+                              break;
+                          case 4:
+                              console.table(todosAlunos)
+                              break;
+                          case 0:
+                              break menu
+                          default:
+                              alert("Opção inválida")
+                      }
+                  }
+              }
+              
+      
+              function achaPosição(matricula){
+                  let posição
+                  for(let i = 0; i < todosAlunos.length; i++){
+                      if(matricula == todosAlunos[i][0]) posição = i
+                  }
+                  return posição
+              }
+      
+      
+              function editarAlunos(matricula){
+                  if(verificaMatricula(matricula) == false) return alert("Matrícula inexistente")
+                  let linha = achaPosição(matricula)
+      
+                  todosAlunos[linha][1] = +prompt("Insira o novo nome do aluno") 
+              }
+                  
+              
+              function cadastraNotas(){
+                  let notas = []
+                  let matricula = +prompt("Insira a matrícula do aluno")
+                  if(verificaMatricula(matricula) == false) return alert("Matrícula inexistente")
+                  let posicao = achaPosição(matricula)
+                  todosAlunos[posicao][2] = +prompt("Insira a primeira nota")
+                  todosAlunos[posicao][3] = +prompt("Insira a segunda nota")
+                  todosAlunos[posicao][4] = +prompt("Insira a terceira nota")
+                  todosAlunos[posicao][5] = (todosAlunos[posicao][2] + todosAlunos[posicao][3] + todosAlunos[posicao][4]) / 3
+      
+              }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
