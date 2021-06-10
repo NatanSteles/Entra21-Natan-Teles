@@ -2,3 +2,22 @@
 Links uteis:https://www.treinaweb.com.br/blog/o-que-e-e-como-funciona-a-estrutura-de-dados-fila/
         Stack: https://www.treinaweb.com.br/blog/o-que-e-e-como-funciona-a-estrutura-de-dados-pilha/
         Deque: https://www.mundojs.com.br/2018/02/05/deque-estrutura-de-dados/
+
+
+source = fonte
+src="movie.mp4"
+<i> fica na mesma linha <i>
+iframe src= link do site para incluir
+tipo de fonte = " source sans pro "
+ul = li 
+<div> = 
+section = para dividir partes do site
+
+
+<nav> = serve para navegação
+   <ul>
+
+      <li>
+<header> = serve para cabeçario
+<main> = o principal/dentro da tag MAIN ( <article> )
+<footer> =roda´[e da pagina] 
