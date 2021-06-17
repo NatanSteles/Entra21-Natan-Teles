@@ -6,15 +6,21 @@ body {
     font-weight: 300;
     line-height: 1.65;
 }
+ .stellar {
+     color: #f7f7f7;
+ }
+ .intro {
+     color: #f7f7f7;
+ }
 
 h1, h2, h3, h4, h5, h6 {
     font-size: 42pt;
     font-weight: 300;
-    color: #ffffff;
+    color: #636363;
 }
 
 .header p, a {
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(99, 99, 99, 0.356);
     font-size: 1em;
     letter-spacing: 0;
 }
@@ -24,10 +30,7 @@ a {
     border-bottom: dotted 1px rgba(255, 255, 255, 0.65);
 }
 
-a:hover {
-    color: #ffffff;
-    border-bottom: none;
-}
+
 
 #header {
     padding: 3.5em 1em 0.5em 1em;
@@ -49,4 +52,21 @@ a:hover {
 }
 .footer {
     text-align: center;
+}
+.nav {   
+    background-color: #f7f7f7;
+    color: #636363;
+    text-align: center;
+    display: block;
+    padding: 18.6667;
+    border-width: 50%;
+}
+.ul {
+    vertical-align: baseline;
+}
+.li {
+    color: #636363;
+}
+.introduction {
+    background-color: #f7f7f7;
 }
