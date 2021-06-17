@@ -38,3 +38,15 @@ a:hover {
     display: block;
     margin: 0 0 1.5em 0;
 }
+.header {
+    text-align: center;
+}
+.second {
+    text-align: center;
+}
+.section3{
+    text-align: center;
+}
+.footer {
+    text-align: center;
+}
