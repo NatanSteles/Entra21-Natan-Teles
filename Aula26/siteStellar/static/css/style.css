@@ -9,7 +9,7 @@ body {
  .stellar {
      color: #f7f7f7;
  }
- .intro {
+ .intro-text {
      color: #f7f7f7;
  }
 
@@ -63,10 +63,20 @@ a {
 }
 .ul {
     vertical-align: baseline;
+    padding: 50px;
 }
 .li {
     color: #636363;
 }
 .introduction {
+    background-color: #f7f7f7;
+}
+.first-section {
+    background-color: #f7f7f7;
+}
+.second-section {
+    background-color: #f7f7f7;
+}
+.section3 {
     background-color: #f7f7f7;
 }
