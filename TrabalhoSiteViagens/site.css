@@ -1,0 +1,156 @@
+body {
+        font-family: Nunito, sans-serif;
+        color: 1c1c1c;
+}
+
+h1, h2, h3 {
+        font-family: Asap, sans-serif;
+        color: #000000; 
+}
+
+.botao {
+    
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 30px;
+        background-color: #191970;
+        font-size: .9em;
+        border-radius: 3px;
+
+
+}
+
+.section {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.section h2 {
+
+            margin-bottom: 20px;
+}
+.section > img {
+
+            width: 100%;
+}
+
+nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #002c6ec0;
+        background-image: url(/Trabalhos/Trabalho/html/css/img/viagens2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+nav > a {
+        
+        text-decoration: none;
+        color: #1c1c1c;
+        font-weight: 900;
+        font-size: 52px;
+        font-family: Yellowtail,serif;
+}
+
+nav ul {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+}
+
+nav ul li a {
+
+        display: inline-block;
+        padding: 10px 0;
+        width: 100%;
+        text-decoration: none;
+        color: #1c1c1c;
+}
+
+header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(38deg, #f7e4b0 30%, #fadd8f 70%);
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 20px;
+}
+header p {
+        margin-bottom: 2em;    
+}
+
+#tokyo .botao {
+        background-color: #f1f1f1;
+        color: #1c1c1c;
+}
+#copacabana .botao {
+
+         background-color: #f1f1f1;
+        color: #1c1c1c;
+}
+
+#newyork .botao {
+
+        background-color: #f1f1f1;
+        color: #1c1c1c;
+}
+
+#egito .botao {
+
+        background-color: #f1f1f1;
+        color: #1c1c1c;
+}
+
+#paris .botao {
+
+        background-color: #f1f1f1;
+        color: #1c1c1c;
+}
+
+.tokyo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+
+}
+.copacabana {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+
+}
+.newyork {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+
+}
+.egito {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+
+}
+.paris {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+
+}
