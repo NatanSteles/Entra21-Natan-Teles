@@ -7,31 +7,63 @@
 </head>
 <body>
 
-    <select>
-        <option value="">Selecione alguma coisa</option>
-        <option value="1">Opção 1</option>
-        <option value="2">Opção 2</option>
-        <option value="2">Opção 3</option>
-    </select>
+
+
+
+
+    
+    <input type="number" name="" id="inicial" placeholder="Valor inicial">
+    <input type="number" name="" id="juros" placeholder="Juros">
+    <input type="number" name="" id="anos" placeholder="Anos">
     <br>
-    <input type="text">
     <p></p>
 
 
     <script>
 
 
+    function  calculaValor() {
+        // Pegar os valores do inputs
+        let valorInicial = +inputInicial.value,
+            juros = +inputJuros.value / 100
+            anos = +inputAnos.value
 
-let input = document.querySelector("input"),
-            p = document.querySelector("p")
+        let resultado = 
+        paragrafo.textContent = resultado
+    }
 
-        input.addEventListener("input", () => {
-            p.textContent = input.value
-        })
+    inputInicial.addEventListener("input", calculaValor)
+    inputJuros.addEventListener("input", calculaValor)
+    inputAnos.addEventListener("input", calculaValor)
 
 
 
+    const selectElement = document.querySelector(`.inicial`);
 
+    selectElement.addEventListener(`change`, (event)) 
+
+
+
+/*
+        Exercício
+
+        Crie um página da web que permita receber um valor inicial
+        de depósito, a quantidade de meses que esse dinheiro ficará
+        depositado e a porcentagem de juros ao ano.
+        Mostre quanto o dinheiro rendeu nesse período.
+
+        O resultado deve ser atualizado conforme os campos forem preenchidos,
+        utilizando o evento input.
+
+        Fórmula:
+        resultado = Math.round(inicial * (1 + juros * anos))
+        
+        Onde:
+            inicial - valor inicial.
+            juros - porcentagem de juros. Ex.: 10%.
+            anos - tempo que o valor ficará depositado.
+        
+        */
 
 
 
