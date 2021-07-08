@@ -10,14 +10,17 @@
 
 
 
-
     
+    <label>Imforme o valor inícial do depósito, quantos mesês esse valor ficará guardado, e porcemtagem de juros ao ano<br>
     <input type="number" name="" id="inicial" placeholder="Valor inicial">
     <input type="number" name="" id="juros" placeholder="Juros">
     <input type="number" name="" id="anos" placeholder="Anos">
+    </label>
     <br>
     <p></p>
-
+    <input type="reset"> 
+    
+    <div class="div"></div>
 
     <script>
 
@@ -28,7 +31,7 @@
             juros = +inputJuros.value / 100
             anos = +inputAnos.value
 
-        let resultado = 
+        let resultado = Math.round(inicial * (1 + juros * anos))
         paragrafo.textContent = resultado
     }
 
@@ -40,7 +43,10 @@
 
     const selectElement = document.querySelector(`.inicial`);
 
-    selectElement.addEventListener(`change`, (event)) 
+    selectElement.addEventListener(`change`, (event) => {
+        const div = document.querySelector(`.resultado`);
+        div.textContent= `Dinheiro rendido ${event.target.resultado}`
+    });
 
 
 
