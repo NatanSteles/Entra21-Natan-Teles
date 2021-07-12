@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicío do Rato</title>
+    <style>
+        #rato {
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <pre id="rato">
+
+
+        _   _
+        (q\_/p)
+         /. .\
+        =\_t_/=   __
+         /   \   (
+        ((   ))   )
+        /\) (/\  /
+        \  Y  /-'
+         nn^nn
+
+
+    </pre>
+
+    <script>
+
+        const rato = document.querySelector("rato")
+
+        rato.addEventListener("click", () => {
+            rato.tabIndex = 0
+            rato.focus()
+        })
+
+        rato.addEventListener("keydown", event => {
+            console.log(event.key)
+        })
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

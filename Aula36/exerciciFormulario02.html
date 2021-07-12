@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        div,
+        textarea {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+
+        }
+    </style>
+</head>
+<div></div>
+<body>
+    <script>
+        const textarea = document.createElement("textarea")
+        let div = document.querySelector("div")
+
+        div.addEventListener("click", () => {
+            div.tabIndex = 0
+            div.focus()
+        })
+
+
+        // 1- criar uma textarea
+        const textarea = document.createElement("textarea")
+
+        // 2- atribuir o innerhtml
+        textarea.value = div.innerHTML
+
+        // 3- adicionar o evento de blur na textarea
+            // * adicionar a value da textarea para o innerhtml
+            // * substituir a textarea pela div(replaceWith)
+        textarea.addEventListener("blur", () => {
+            div.innerHTML = textarea.value
+            textarea.replaceWith(div)
+        })
+
+        // 4- adicionar o evento keydown na textarea para verificar o enter precionado
+        textarea.addEventListener("keydown", () => {
+            if (event.key === "enter")
+                textarea.blur()
+        })
+        // 5- substituir a div pela textarea
+        div.replaceWith(textarea)
+        
+
+    </script>
+</body>
+
+</html>
