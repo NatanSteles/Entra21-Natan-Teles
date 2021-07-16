@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Horário:
+    <div class="tempo"></div>
+    <script>
+
+
+
+/*2) Utilizando setInterval faça um relógio que obtenha o horário atual
+        e faça ele aparecer na tela no formato: 
+        hh:mm:ss*/
+        
+        
+        
+        function relogio(){
+            let tempo = document.querySelector(".tempo")
+            let dataParametros = new Date()
+            let hh = dataParametros.getHours()
+            let mm = dataParametros.getMinutes()
+            let ss = dataParametros.getSeconds()
+
+            let hora = hh < 10? "0" + hh : hh
+            let min = mm < 10? "0" + mm : mm
+            let sec = ss < 10? "0" + ss : ss
+            tempo.innerHTML = (`${hora}:${min}:${sec}`)   
+        }
+        let intervalo = setInterval(relogio, 1000)
+
+
+
+
+
+    </script>
+</body>
+</html>
