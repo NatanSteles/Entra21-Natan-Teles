@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+
+
+        /*
+                Exercícios
+        
+                1) Escreva a função imprimeNumeros(comeco, fim) que mostre um número a cada segundo, começando
+                do comeco até o fim. */
+        {
+        function numeros(começo, fim){
+            for(let i = começo; i <= fim; i++){
+                setTimeout(() => console.log(i), i*1000)
+            }
+        }
+        function imprimeNumeros(começo, fim) {
+            setTimeout(() => numeros(começo, fim), começo*1000)
+        }
+        }
+            
+        
+            
+            function num(começo, fim){
+                console.log(i++)
+            }
+            
+            function imptimeNumeros(começo, fim){
+                i = começo
+                let tempo = fim - começo +1
+                let intervalo = setInterval(() => num(começo, fim), 1000)
+                setTimeout(() => clearInterval(intervalo), tempo*1000)
+            }
+        
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
